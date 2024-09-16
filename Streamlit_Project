@@ -1,0 +1,23 @@
+import streamlit as st
+st.title('My first app')
+st.write('Hello all')
+st.balloons()
+x=st.text_input('Which Technology you want to learn')
+st.write(x)
+if x=='Ai':
+    st.write('kindly enroll in python first')
+y=st.radio('Are you Graduate',options=['Yes','No'])
+if y=='Yes':
+    st.write('You can enroll in our diploma course')
+else:
+    st.write('You can do internship')
+a=st.button('Show')
+if a==1:
+   z=st.selectbox('Select the Technology',('Python','Java','C++'))
+   if z=='Python':
+       st.write('contact abc 98765457')
+   elif z=='Java':
+       st.write('contact xyz 98765457')
+   elif z=='C++':
+       st.write('contact pqr 98765457')
+st.button('select from list given')
